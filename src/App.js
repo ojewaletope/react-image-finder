@@ -3,7 +3,7 @@ import "./App.css";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import NavBar from "./components/navbar/NavBar";
-import Search from './components/search/Search'
+import Search from "./components/search/Search";
 
 class App extends Component {
   render() {
@@ -11,7 +11,9 @@ class App extends Component {
       <MuiThemeProvider>
         <div>
           <NavBar />
-          <Search/>
+          <div className="container">
+            <Search />
+          </div>
         </div>
       </MuiThemeProvider>
     );
